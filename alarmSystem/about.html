@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Smartscape Alarm</title>
+    <link rel="icon" href="symbole.PNG" type="image/PNG">
+    <link href="style.css" rel="stylesheet" type="text/css" />
+
+    <!-- bootstrap core -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    <!-- custom fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    
+</html>
+<body>
+  <!-- navigation bar at top -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#">Smartscape</a>
+
+  <div id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="index.html">Home</a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="about.html">About Us<span class="sr-only">(current)</span></a>
+      </li>
+       <li class="nav-item">
+        <a class="nav-link" href="setup.html">Set Up</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="view.html">Your Alarm</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+  <!-- end nav -->
+
+  <div class="container-fluid">
+  <a href="index.html" class="btn btn-primary">Back</a>
+  <div class="row">
+   <div class="col-md-12 mx-auto">
+     <h2> About Us: </h2>
+    <div class="row">
+      <div class="col-6">
+        <article>
+          <h3> Welcome to Smartscape</h3>
+          <h4>Your number one source for all smart devices.</h4>
+          <p>
+           We're dedicated to giving you the very best of smart-home devices, with a focus on convenience, modernisation and accessibility.
+<br></br>
+Founded in 2002 by John Doe, SmartScape Ltd. has come a long way from its beginnings in Balleybeg. When John first started out, his passion for user-friendly smart products drove him to start researching modern and innovative appliances so that SmartScape Ltd. can offer you the world's most advanced smart devices and alarms. We now serve customers all over Ireland, and are thrilled that we're able to turn our passion into our own website.
+          <br></br>
+We hope you enjoy our products as much as we enjoy offering them to you. If you have any questions or comments, please don't hesitate to contact us.
+<br></br>
+Sincerely,
+<br>
+SmartScape Ltd.
+          </p>
+          <h3>What your Smart Alarm does
+          </h3>
+          <p>
+           For those who would like to simply wake up and go, our original alarm clock will wake you up at the same time and turn on your room's lights. This solves you having to manually set an alarm every day with the added benefit of your own home doing mundane things for you.
+          </p>
+          <h3>Visit out other websites
+          </h3>
+          <p>
+           From alarm clocks to kitchen appliances, we have everything. These are a few of our many products we offer:
+            <br>
+          <a href="url">www.smartscape-vacuum.com</a>
+            <br>
+          <a href="url">www.smartscape-television.com</a>
+            <br>
+          <a href="url">www.smartscape-coffee-maker.com</a>
+           </p>
+           </article>
+             <h2>Contact Us</h2>
+        
+            <div class="alert alert-success success-message" style="display:none;">Form submitted successfully.</div>
+          <form id="contactForm">
+                <div class="form-group">
+                    <label for="exampleFullName">Full Name</label>
+                    <input type="text" class="form-control fullname" id="exampleFullName" placeholder="Enter Full Name" required>
+                </div>
+            <div class="form-group">
+                    <label for="exampleEmail">Email</label>
+                    <input type="email" class="form-control email" id="exampleEmail" placeholder="Enter Email" required>
+                </div>
+            <div class="form-group">
+                    <label for="exampleSubject">Subject</label>
+                    <input type="text" class="form-control subject" id="exampleSubject" placeholder="Enter Subject" required>
+                </div>
+                <div class="form-group">
+                    <label for="exampleMessage">Message</label>
+                    <textarea class="form-control message" id="exampleMessage" placeholder="Enter Message" cols="30" rows="10" required></textarea>
+                </div>
+            <p>By submitting this form, I consent to be contacted by Smartscape via email and understand that Smartscape does not give my contact details to any third party.</p>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+       </div>
+      </div>
+     <div class="row">
+      <div class="col-6">
+    </div>
+  </div>
+</div>
+
+    <!-- script links -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script>
+    <script src="firebaseCommands.js"></script>
+  <script src="script.js"></script>
+  
+  </body>

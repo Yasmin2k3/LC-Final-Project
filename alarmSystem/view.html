@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Smartscape Alarm</title>
+    <link rel="icon" href="symbole.PNG" type="image/PNG">
+    <link href="style.css" rel="stylesheet" type="text/css" />
+
+    <!-- bootstrap core -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+
+    <!-- custom fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+
+      <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script>
+
+        <script src="/firebaseCommands.js"></script>
+      <script src="/script.js"></script>
+</html>
+<body>
+  <!-- navigation bar at top -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#">Smartscape</a>
+
+  <div id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="index.html">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="about.html">About Us</a>
+      </li>
+       <li class="nav-item">
+        <a class="nav-link" href="setup.html">Set Up</a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="view.html">Your Alarm<span class="sr-only">(current)</span></a>
+      </li>
+    </ul>
+  </div>
+</nav>
+  <!-- end nav -->
+
+  
+<div class="container-fluid">
+  <a href="index.html" class="btn btn-primary">Back</a>
+  <div class="row">
+      <div class="col-md-12 mx-auto">
+        <div class="row">
+          <div class="col-6">
+            <h2> Time Set For: </h2>
+            <article>
+              <!-- generates most recent alarm -->
+              <div id="sideDiv"></div>
+              <button onclick="silenceAlarm(false)">Turn off Alarm</button>
+            </article>
+          </div>
+          <div class="row">
+            <div class="container-fluid">
+              <!-- generates list of alarms -->
+              <h2> Previous Alarms: </h2>
+              <div id="mainDiv"></div>
+
+            </div>
+        </div>
+      </div>
+  </div>
+</div>
+</div>
+
+  </body>

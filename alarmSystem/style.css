@@ -1,0 +1,35 @@
+html,
+/* offwhite: #ededed light blue:#a1cfe3 */
+body {
+  font-family: 'Montserrat', sans-serif !important;
+  font-size: 20px;
+  background-image: url("wallpaper.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+h1 {
+  margin: 100px !important;
+  color: grey !important;
+  font-size: 100px !important;
+}
+
+h2 {
+  padding: 10px;
+}
+
+.card {
+  margin: 6px; 
+  width: 18rem;
+  padding: 0px;
+}
+
+.navbar .navbar-brand {
+  color: #a1cfe3 !important;
+}
+
+.col-6 {
+  margin: 4px;
+  padding: 8px;
+}
